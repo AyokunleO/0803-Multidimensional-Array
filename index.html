@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Dimensional Array</title>
+</head>
+<body>
+    <script>
+        var quote = [
+        ["Nelson Mandela", "The greatest glory in living lies not in never falling, but in rising every time we fall", "South Africa"],
+        ["Walt Disney", "The way to get started is to quit talking and begin doing.", "USA"],
+        ["Steve Jobs", "Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma – which is living with the results of other people's thinking.", "USA"],
+        ["Eleanor Boosevelt", "If life were predictable it would cease to be life, and be without flavor.", "USA"],
+        ["Oprah Winfrey", "If you look at what you have in life, you'll always have more. If you look at what you don't have in life, you'll never have enough.", "USA"],
+        ["James Cameron", "If you set your goals ridiculously high and it's a failure, you will fail above everyone else's success.", "UK"],
+
+        ["John Lennon", "Life is what happens when you're busy making other plans.", "USA"],
+        ["Mother Theresa", "Spread love everywhere you go. Let no one ever come to you without leaving happier.", "Calcuta"],
+        ["Franklin Roosevelt", "When you reach the end of your rope, tie a knot in it and hang on.", "USA"],
+        ["Ralph Waldo Emerson", "Do not go where the path may lead, go instead where there is no path and leave a trail", "USA"],
+        ["Maya Angelou", "You will face many defeats in life, but never let yourself be defeated.", "USA"],
+        ["Babe Ruth", "Never let the fear of striking out keep you from playing the game.", "USA"],
+        ["Delai Lama", "The purpose of our lives is to be happy", "India"],
+        ["Bob Marley", "Love the life you live. Live the life you love.", "Jamaica"],
+        ["John Rockefeller", "The secret of success is to do the common thing uncommonly well.", "USA"],
+        ["Thomas Eddison", "Many of life's failures are people who did not realize how close they were to success when they gave up.", "USA"],
+        ["Barrack Obama", "The real test is not whether you avoid this failure, because you won't. It's whether you let it harden or shame you into inaction, or whether you learn from it; whether you choose to persevere.", "USA"]
+        ];
+
+        document.write(`<table border = 1><tr><th>S/N</th><th>Name</th><th>Quote</th><th>Nationality</th></tr>`);
+            for(var k = 0; k < quote.length; k++)
+            {
+                document.write(`<tr>`);
+                    document.write(`<td>${k+1} </td>`);
+                    for(var l = 0; l < quote[k].length; l++){
+                        document.write(`<td> ${quote[k][l]}</td>`);
+                    }
+                    document.write(`</tr>`);
+            } document.write(`</table>`);
+    </script>
+</body>
+</html>
